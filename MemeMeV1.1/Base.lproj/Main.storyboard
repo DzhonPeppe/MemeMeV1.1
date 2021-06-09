@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemeMeV1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-Za-7Yg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="ZVY-Qg-DlT"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="IDx-Ut-OGX"/>
+                                    <barButtonItem title="Cancel" id="F1d-R6-LRt"/>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBr-jc-jbD">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4SX-ck-bR6"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" image="camera" catalog="system" id="J5B-5b-xmw"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="iXf-zb-9HH"/>
+                                    <barButtonItem title="Album" id="nqG-6f-HKJ"/>
+                                </items>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="abm-Cr-Apu">
+                                <rect key="frame" x="0.0" y="88" width="414" height="730"/>
+                                <color key="backgroundColor" red="0.28329515709999997" green="0.28329515709999997" blue="0.28329515709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZUQ-Za-7Yg" firstAttribute="trailing" secondItem="zBr-jc-jbD" secondAttribute="trailing" id="5As-kW-jCp"/>
+                            <constraint firstItem="ZUQ-Za-7Yg" firstAttribute="trailing" secondItem="abm-Cr-Apu" secondAttribute="trailing" id="GTT-Bv-qNM"/>
+                            <constraint firstItem="ZUQ-Za-7Yg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HiM-dU-3Te"/>
+                            <constraint firstItem="abm-Cr-Apu" firstAttribute="top" secondItem="ZUQ-Za-7Yg" secondAttribute="bottom" id="L5Z-76-tam"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="abm-Cr-Apu" secondAttribute="trailing" id="SR3-e1-DO3"/>
+                            <constraint firstItem="zBr-jc-jbD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hsl-gs-e34"/>
+                            <constraint firstItem="abm-Cr-Apu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l2v-X8-Ivs"/>
+                            <constraint firstItem="ZUQ-Za-7Yg" firstAttribute="leading" secondItem="zBr-jc-jbD" secondAttribute="leading" id="rHu-tn-Uad"/>
+                            <constraint firstItem="zBr-jc-jbD" firstAttribute="top" secondItem="abm-Cr-Apu" secondAttribute="bottom" id="rJF-rG-CxH"/>
+                            <constraint firstItem="ZUQ-Za-7Yg" firstAttribute="leading" secondItem="abm-Cr-Apu" secondAttribute="leading" id="u4A-Il-iRM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
